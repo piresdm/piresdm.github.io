@@ -1,215 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
- 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Personal Page - piresdm</title>
 
-    <style>
-      
-      /*General*/
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Personal Page - piresdm</title>
 
-      body{
+  <style>
+    /*General*/
+
+    body {
       font-family: 'Segoe UI', sans-serif;
       font-size: 14pt;
       background-color: #ffffff;
       width: 70%;
       margin: auto auto auto auto;
-      }
-      h1{
-        font-size: 22pt;
-      }
-      h4{
-        font-size: 16pt;
-      }  
-      
-      /*Header*/ 
+      text-indent: 50px;
+    }
 
-      header#titulopagina{
-       font-family: 'Segoe UI', sans-serif;
-       font-size: 13pt;
-       text-align: center; 
-       color: rgb(83, 82, 77);
-       background-color: rgb(216, 215, 210); 
-       padding: 1px;
-       box-shadow: 0px 0px 10px rgba(0,0,0,.5);
-      }
-      header#titulopagina img#Portuguese{
-        padding:5px;
-      }
-      
-      /*Abstract*/
+    /*Header*/
 
-      table#tabresumo{
-        color: rgb(83, 82, 77);
-        font-size: large;
-      }
-      p#paragresumo{
-        font-weight:400;
-      }
-     table#tabresumo td{
-         font-size: 14pt;
-         padding:10px;
-     }
-     figcaption{
-        font-size: 10pt;
-        color:rgb(83, 82, 77);
-        text-align: center;
-     }
+    header#titulopagina {
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 13pt;
+      text-align: center;
+      color: rgb(83, 82, 77);
+      background-color: rgb(216, 215, 210);
+      padding: 1px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+    }
 
-      /*Body*/
+    header#titulopagina img#english {
+      padding: 5px;
+    }
 
-     table#tabcorpo{
+    h1 {
+      font-size: 22pt;
+    }
+
+    /*Abstract*/
+
+    section#resumo {
+      color: rgb(83, 82, 77);
+      font-size: large;
+      font-size: 14pt;
+      padding: 10px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-right: 0px;
+      margin-top: 70px;
+    }
+
+    p#paragresumo {
+      font-weight: 400;
+      display: inline-block;
+      width: 450px;
+      text-align: center;
+      margin-left: 80px;
+      margin-top: 20px;
+      text-indent: 0px;
+    }
+
+    div#foto {
+      display: inline;
+      float: left;
+      margin-bottom: 30px;
+    }
+
+    #imgperfil {
+      width: 310px;
+    }
+
+    figcaption {
+      font-size: 10pt;
+      color: rgb(83, 82, 77);
+      text-align: left;
+      margin-left: 20px;
+    }
+
+    /*Body*/
+
+    table#tabcorpo {
       font-family: 'Segoe UI', sans-serif;
       color: rgb(83, 82, 77);
-      }
-      table#tabcorpo thead th{
-       border-bottom: 1px solid #707070;
-       border-top: 1px solid #707070;
-     }
-     table#tabcorpo td{
-       width: 70%;
-       height: 5%;
-       text-align: justify;
-     }
+      clear: both;
+    }
 
-      /*Footer*/
+    table#tabcorpo thead th {
+      border-bottom: 1px solid #707070;
+      border-top: 1px solid #707070;
+    }
 
-      footer{
-       color: rgb(83, 82, 77);
-       text-align: center;
-       font-size: 13pt;
-       height: 5%;
-       border-top: 1px solid #707070;
-     }
-     footer a{
+    table#tabcorpo td {
+      width: 70%;
+      height: 5%;
+      text-align: justify;
+    }
+
+    h4 {
+      font-size: 16pt;
+      text-indent: 0px;
+    }
+
+    /*Footer*/
+
+    footer {
+      color: rgb(83, 82, 77);
+      text-align: center;
+      font-size: 13pt;
+      height: 5%;
+      border-top: 1px solid #707070;
+    }
+
+    footer a {
       text-decoration: none;
-      color:rgb(66, 75, 126);  
+      color: rgb(66, 75, 126);
     }
-     footer a:hover{
-       background-color: #bbbbbb;
-       color: #ffffff;
+
+    footer a:hover {
+      background-color: #bbbbbb;
+      color: #ffffff;
     }
-   </style>
-  </head>
-  
-  <body>
-    <br> 
 
-     <!--Header-->
+    /*Responsiveness*/
 
-    <header id=titulopagina>
-      <a href="https://piresdm.github.io">
-        <img id="Portuguese" align= "right" src="Imgs/Brazil.jpg" alt="Portuguese" height="20px">
-      </a>  
-      <h1> Daniela Mendonça Pires (@piresdm) </h1> 
-    
-    </header>
-    <br>
-    
-    <!--Profile's Abstract-->
+    @media screen and (max-width:415px) {
 
-    <table id=tabresumo> 
-    
-     <tbody>
-        <tr>
-           <td rowspan="2">
-             <a href="https://www.linkedin.com/in/danielampires/?locale=en_US" target="_blank"> 
-             <img src="Imgs/fotoperfil.jpg" alt="imagem prefil" height="300px" width="310px"> </a>
-             <figcaption> (Click on the photo to visit my Linkedin page)</figcaption>
-           </td>
-           <td>
-             <h2 align=center> Welcome! </h2>
-             <p id=paragresumo align=center>My name is Daniela and I am 29. I live in  Recife/PE – Brazil and study web development. </p>     
-           </td>
-       </tr>
-        
-      </tbody>
-   </table>
-   <br>
-        
+      header {
+        width: 100%;
+      }
 
-   <!--General Information-->
+      div#foto {
+        width: 300px;
+        margin-left: -50px;
+        display: inline-block;
+        clear: both;
+      }
 
-   <table id=tabcorpo> 
-     
-      <thead>
-        <th><h3> Would you like to know more about me?</h3></th>
-      </thead>
+      img#imgperfil {
+        width: 250px;
+        margin-left: -5px;
+      }
 
-      <tbody>  
-        
-        <tr>
-          <td>
-            <h4>Personal</h4> 
-            <p> &nbsp;&nbsp;&nbsp;&nbsp;
-              I’m Aries with Scorpio rising, born and raised in Recife/Brazil. If you know what that means, don’t panic, that’s not as bad as you think. If you don’t know, well, it’s probably better this way, sometimes this stereotype doesn’t fit well.
-            </p>
-            <p> &nbsp;&nbsp;&nbsp;&nbsp;
-              I have an older sister and I studied my whole life at the same school, where I made friends who grew up by my side and are always there. I was also an athlete, I played volleyball, and I learned a lot with that. Sports taught me teamwork, how to control nervousness and anxiety, to overcome defeats and, above all, that no victory is good enough if not shared. Winning alone is no fun, it’s the people who are with you that make the journey and the conquer worthwhile.
-            </p>
-          </td>
-        </tr>
-      
-        <tr>
-          <td>
-            <h4>Living abroad</h4>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;
-              In 2009, I lived for two months in Montreal, Canada. My intention when I left Brazil was to study English, but this trip ended up being much more than that. There, I met very especial people that have been with me since then, besides that, I had the pleasure of meeting people from all over the world. 
-            </p>
-            <p> &nbsp;&nbsp;&nbsp;
-              I consider Montreal the most miscegenated city I’ve ever been to. The experience of living there and feeling all that mixing of cultures everyday opened my eyes to how different the world and the people on that are and how much we can learn from all the different culture spreaded around. There, I also had the pleasure of having an incredible family, and I keep with affection all the memories of the moments I had with my host parents, my three brothers and the other exchange student that lived with us back then. They were essential to make this trip work and be so special.
-            </p>             
-          </td>
-       </tr>
+      figcaption {
+        font-size: 8pt;
+      }
 
-       <tr>
-         <td>
-           <h4>Passions, hobbies and dreams</h4>
-           <p> &nbsp;&nbsp;&nbsp;&nbsp;
-             The greatest pleasure I have in life can be summed up in a single verb: “to travel”. Traveling is my greatest passion, visiting new places, seeing stunning views and meeting very different people and cultures, nothing gets me more excited or gives me more satisfaction than that. For me, as Mário Quintana would say, traveling is changing the soul’s clothes!           
-           </p>
-           <p> &nbsp;&nbsp;&nbsp;&nbsp;
-             Among my other passions are soccer, TV shows, chocolate, family and friends. Those are the things I use to spend most part of my free time. About my dreams, well, it couldn’t be different, the biggest one is traveling around all the world. I also want to have the opportunity to live abroad for a while so badly and to go to a Soccer World Cup and an Olympics.  
-           </p>
-         </td>
-       </tr>
+      h2 {
+        display: block;
+        clear: both;
+        margin-left: -50px;
+        text-align: center;
+        font-size: 18pt;
+      }
 
-       <tr>
+      p#paragresumo {
+        width: 250px;
+        margin-left: 0px;
+      }
+
+      h3 {
+        margin-left: -50px;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <br>
+
+  <!--Header-->
+
+  <header id=titulopagina>
+    <a href="https://piresdm.github.io">
+      <img id="Portuguese" align="right" src="Imgs/Brazil.jpg" alt="Portuguese" height="20px">
+    </a>
+    <h1> Daniela Mendonça Pires (@piresdm) </h1>
+
+  </header>
+  <br>
+
+  <!--Profile's Abstract-->
+
+  <section id="resumo">
+
+    <div id="foto">
+      <a href="https://www.linkedin.com/in/danielampires/?locale=en_US" target="_blank">
+        <img id="imgperfil" src="Imgs/fotoperfil.jpg" alt="imagem prefil"> </a>
+      <figcaption> (Click on the photo to visit my Linkedin page)</figcaption>
+    </div>
+
+    <div id="texto">
+      <h2> Welcome! </h2>
+      <p id=paragresumo>My name is Daniela and I am 29. I live in Recife/PE – Brazil and study web development. </p>
+    </div>
+  </section>
+  <br>
+
+
+  <!--General Information-->
+
+  <table id=tabcorpo>
+
+    <thead>
+      <th>
+        <h3> Would you like to know more about me?</h3>
+      </th>
+    </thead>
+
+    <tbody>
+
+      <tr>
         <td>
-          <h4>Professional</h4>
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;
-            I’m graduated in Business Administration and did an extension course in Tax Planning. In Administration, I worked with the supply area, with commercial planning and with digital media. Despite that, what I love in business is related to accounting, finance, investments, taxes and areas connected to that.
+          <h4>Personal</h4>
+          <p>
+            I’m Aries with Scorpio rising, born and raised in Recife/Brazil. If you know what that means, don’t panic,
+            that’s not as bad as you think. If you don’t know, well, it’s probably better this way, sometimes this
+            stereotype doesn’t fit well.
           </p>
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;
-            However, I was always a heavy user of technologies and I always wanted to get to know the world behind it better. So, in 2020, I decided to change my professional area and to seek for new challenges connected with another passion of mine: technology.  I found out that this is what I want to work with and decided starting a new course in Internet Systems Programming at Universidade Católica de Pernambuco (UNICAP). I’m still in the first semester and don’t have a lot of technical knowledge, but I’ve already got in love even more with the area and have already managed to learn a little bit of HTML and CSS. At this moment, I’m seeking for an opportunity in the job market to put in practice my initial knowledge and to add much more to my learning process.
+          <p>
+            I have an older sister and I studied my whole life at the same school, where I made friends who grew up by
+            my side and are always there. I was also an athlete, I played volleyball, and I learned a lot with that.
+            Sports taught me teamwork, how to control nervousness and anxiety, to overcome defeats and, above all, that
+            no victory is good enough if not shared. Winning alone is no fun, it’s the people who are with you that make
+            the journey and the conquer worthwhile.
           </p>
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;
-            If you’ve got here, this webpage was the way I found to show you a little bit of what I’ve already started learning. I hope you have enjoyed it, if you would like to offer me an opportunity to work, the links to my social networks are on the page's footer, or you can also click on my image on the top of the page to be redirected to my Linkedin web page.
-          </p>
-          <p> &nbsp;&nbsp;&nbsp;&nbsp;
-            Thank you a lot for visiting and I hope to see you later again! &#128521;
-          </p> 
-          
         </td>
       </tr>
-                             
-      </tbody>
-    </table>
-    <br><br>
-   
-   <!--Footer-->
-   
-    <footer> 
-      
-      <p>Copyright 2020 - by Daniela Mendonça. <br><br>
-        &nbsp; <a href="https://www.linkedin.com/in/danielampires/?locale=en_US" target="_blank"> Linkedin |</a>
-        <a href="https://www.instagram.com/dandica/" target="_blank"> Instagram |</a> 
-        <a href="https://www.facebook.com/dandicamp/" target="_blank"> Facebook </a>
-      </p> 
-      <br>
-                 
-    </footer>
-  </body>
+
+      <tr>
+        <td>
+          <h4>Living abroad</h4>
+          <p>
+            In 2009, I lived for two months in Montreal, Canada. My intention when I left Brazil was to study English,
+            but this trip ended up being much more than that. There, I met very especial people that have been with me
+            since then, besides that, I had the pleasure of meeting people from all over the world.
+          </p>
+          <p>
+            I consider Montreal the most miscegenated city I’ve ever been to. The experience of living there and feeling
+            all that mixing of cultures everyday opened my eyes to how different the world and the people on that are
+            and how much we can learn from all the different culture spreaded around. There, I also had the pleasure of
+            having an incredible family, and I keep with affection all the memories of the moments I had with my host
+            parents, my three brothers and the other exchange student that lived with us back then. They were essential
+            to make this trip work and be so special.
+          </p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <h4>Passions, hobbies and dreams</h4>
+          <p>
+            The greatest pleasure I have in life can be summed up in a single verb: “to travel”. Traveling is my
+            greatest passion, visiting new places, seeing stunning views and meeting very different people and cultures,
+            nothing gets me more excited or gives me more satisfaction than that. For me, as Mário Quintana would say,
+            traveling is changing the soul’s clothes!
+          </p>
+          <p>
+            Among my other passions are soccer, TV shows, chocolate, family and friends. Those are the things I use to
+            spend most part of my free time. About my dreams, well, it couldn’t be different, the biggest one is
+            traveling around all the world. I also want to have the opportunity to live abroad for a while so badly and
+            to go to a Soccer World Cup and an Olympics.
+          </p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <h4>Professional</h4>
+          <p>
+            I’m graduated in Business Administration and did an extension course in Tax Planning. In Administration, I
+            worked with the supply area, with commercial planning and with digital media. Despite that, what I love in
+            business is related to accounting, finance, investments, taxes and areas connected to that.
+          </p>
+          <p>
+            However, I was always a heavy user of technologies and I always wanted to get to know the world behind it
+            better. So, in 2020, I decided to change my professional area and to seek for new challenges connected with
+            another passion of mine: technology. I found out that this is what I want to work with and decided starting
+            a new course in Internet Systems Programming at Universidade Católica de Pernambuco (UNICAP). I’m still in
+            the first semester and don’t have a lot of technical knowledge, but I’ve already got in love even more with
+            the area and have already managed to learn a little bit of HTML and CSS. At this moment, I’m seeking for an
+            opportunity in the job market to put in practice my initial knowledge and to add much more to my learning
+            process.
+          </p>
+          <p>
+            If you’ve got here, this webpage was the way I found to show you a little bit of what I’ve already started
+            learning. I hope you have enjoyed it, if you would like to offer me an opportunity to work, the links to my
+            social networks are on the page's footer, or you can also click on my image on the top of the page to be
+            redirected to my Linkedin web page.
+          </p>
+          <p>
+            Thank you a lot for visiting and I hope to see you later again! &#128521;
+          </p>
+
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+  <br><br>
+
+  <!--Footer-->
+
+  <footer>
+
+    <p>Copyright 2020 - by Daniela Mendonça. <br><br>
+      &nbsp; <a href="https://www.linkedin.com/in/danielampires/?locale=en_US" target="_blank"> Linkedin |</a>
+      <a href="https://www.instagram.com/dandica/" target="_blank"> Instagram |</a>
+      <a href="https://www.facebook.com/dandicamp/" target="_blank"> Facebook </a>
+    </p>
+    <br>
+
+  </footer>
+</body>
+
 </html>
